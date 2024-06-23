@@ -9,7 +9,7 @@ export default function App() {
         fontStyle:'italic',
       }}>Alfamadi</Text>
       <Text style={{
-        fontSize:30,
+        fontSize:20,
         fontStyle:'italic',
         textDecorationLine:'underline',
         textShadowColor:'grey',
