@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
-
+import ButtonComponent from './component/button/button';
 const App = () => {
   return (
     <View style={{
@@ -46,7 +46,7 @@ const App = () => {
             color: 'white',
             position: 'absolute',
             top: 100,
-            marginTop: 20,
+            marginTop: 130,
         }}>SYKREPES</Text>
         <Text style={{
             color: 'white',
@@ -67,34 +67,10 @@ const App = () => {
             justifyContent: 'center',
             alignItems: 'center',
             marginTop: 20,
-            marginBottom: 40,
+            marginBottom: 40
         }}>
-            <View style={{ marginHorizontal: 10}}>
-                <Text style={{
-                    width: 100,
-                    height: 50,
-                    color: 'black', 
-                    backgroundColor: 'white',
-                    textAlign: 'center',
-                    lineHeight: 50,
-                    fontSize: 20,
-                    borderRadius: 10,
-                    marginTop: 80,
-                }}>Login</Text>
-            </View>
-             <View style={{ marginHorizontal: 20 }}>
-                <Text style={{
-                    width: 100,
-                    height: 50,
-                    color: 'black',
-                    backgroundColor: 'white',
-                    textAlign: 'center',
-                    lineHeight: 50,
-                    fontSize: 20,
-                    borderRadius: 10,
-                    marginTop: 80,
-            }}>Register</Text>
-          </View>
+            <ButtonComponent title= "Sign In"  color="green"/>
+            <ButtonComponent title= "Sign Up"  color="tomato"/>
         </View>
       </ScrollView>
     </View>
